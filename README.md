@@ -179,17 +179,6 @@ with torch.no_grad():
     applause_prob = torch.softmax(logits, dim=1)[0, 1].item()
 ```
 
-## 🎯 Interview Demonstration Points
-
-This project demonstrates several key ML/AI concepts:
-
-1. **End-to-End ML Pipeline**: Data processing → Model training → Deployment
-2. **Neural Network Architecture**: LSTM/Transformer design and implementation
-3. **Audio Processing**: Feature extraction from raw audio data
-4. **Model Evaluation**: Comprehensive metrics and validation
-5. **Web Deployment**: Interactive Streamlit interface
-6. **Real-world Application**: Practical use case in political analysis
-
 ## 📚 Research Background
 
 This project is based on the research paper:
@@ -199,29 +188,5 @@ This project is based on the research paper:
 
 The original paper analyzed 310 political speeches from the 2016 US presidential campaign, identifying over 19,000 instances of audience applause and developing models to predict when applause occurs.
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Original research by Jon Gillick and David Bamman
-- The "Please Clap" dataset and methodology
-- PyTorch and Streamlit communities for excellent tools
-- Political speech data from C-SPAN and PennSound archives
-
-## 📞 Contact
-
-For questions or collaboration opportunities, please open an issue or contact the project maintainer.
-
----
-
-**🎉 Happy Training! Show them what you've learned about neural networks!**
