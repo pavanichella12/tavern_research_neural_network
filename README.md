@@ -1,8 +1,8 @@
-# 🎤 Political Speech Applause Detection
+# Political Speech Applause Detection
 
 A neural network-powered system that analyzes political speeches to predict audience applause reactions. This project demonstrates end-to-end machine learning pipeline development, from data processing to model deployment.
 
-## 🎯 Project Overview
+##  Project Overview
 
 This project builds upon the research from the "Please Clap" paper (Gillick & Bamman, 2018) to create a practical applause detection system. It combines:
 
@@ -11,7 +11,7 @@ This project builds upon the research from the "Please Clap" paper (Gillick & Ba
 - **Real-time Analysis**: Interactive web interface for live predictions
 - **Comprehensive Training**: Full ML pipeline with validation and metrics
 
-## 🚀 Features
+## Features
 
 - **Real-time Applause Detection**: Upload audio files and get instant predictions
 - **Neural Network Training**: Complete training pipeline with LSTM/Transformer models
@@ -41,7 +41,7 @@ This project builds upon the research from the "Please Clap" paper (Gillick & Ba
 └── README.md                       # This file
 ```
 
-## 🛠️ Installation
+##  Installation
 
 1. **Clone the repository:**
 ```bash
@@ -62,7 +62,7 @@ pip install -r requirements.txt
      - `non_applause_pt1/`, `non_applause_pt2/` (non-applause samples)
      - `PennSound_applause_labels.csv`, `PennSound_non_applause_labels.csv`
 
-## 🎓 Training the Model
+## Training the Model
 
 ### Quick Start
 ```bash
@@ -86,7 +86,7 @@ python train_model.py --model_type transformer --hidden_dim 768 --epochs 50
 - `--hidden_dim`: Hidden dimension size (default: 512)
 - `--save_dir`: Directory to save models (default: 'models')
 
-## 🎮 Running the Demo
+## Running the Demo
 
 1. **Start the Streamlit app:**
 ```bash
@@ -97,7 +97,7 @@ streamlit run demo/app.py
 
 3. **Upload an audio file** and click "Analyze for Applause"
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 ### LSTM Model
 - **Input**: MFCC features (13-dim) + spectral features (12-dim)
@@ -111,7 +111,7 @@ streamlit run demo/app.py
 - **Positional Encoding**: Sinusoidal positional encoding
 - **Output**: Binary classification
 
-## 📊 Model Performance
+## Model Performance
 
 The model achieves the following performance metrics:
 
@@ -138,7 +138,7 @@ The model achieves the following performance metrics:
 5. **Early Stopping**: Prevents overfitting with patience=10
 6. **Model Saving**: Best model saved based on validation loss
 
-## 📈 Usage Examples
+## Usage Examples
 
 ### Training a Custom Model
 ```python
@@ -179,7 +179,7 @@ with torch.no_grad():
     applause_prob = torch.softmax(logits, dim=1)[0, 1].item()
 ```
 
-## 📚 Research Background
+##  Research Background
 
 This project is based on the research paper:
 > **"Please Clap: Modeling Applause in Campaign Speeches"**  
