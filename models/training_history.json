@@ -1,0 +1,21 @@
+{
+  "train_losses": [
+    12.31213254706804,
+    0.0
+  ],
+  "val_losses": [
+    0.0,
+    0.0
+  ],
+  "train_accuracies": [
+    98.83381924198251,
+    100.0
+  ],
+  "val_accuracies": [
+    100.0,
+    100.0
+  ],
+  "best_val_loss": 0.0,
+  "training_time": 108.9596529006958,
+  "total_epochs": 2
+}
